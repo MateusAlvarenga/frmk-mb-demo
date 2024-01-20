@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ILibraryService {
 
-    public List<Book> findAll();
+    public List<Book> listAllBooks();
     public Book findById(Long id);
     public Book save(Book book);
 
