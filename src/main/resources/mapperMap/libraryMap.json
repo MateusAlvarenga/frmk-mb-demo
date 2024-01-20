@@ -1,0 +1,21 @@
+{
+  "maps": [
+    {
+      "fetchMap": [
+        {
+          "id": "listAllBooks",
+          "columns": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

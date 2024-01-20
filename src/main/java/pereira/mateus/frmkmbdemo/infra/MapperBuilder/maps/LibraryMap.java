@@ -1,6 +1,6 @@
-package pereira.mateus.frmkmbdemo.infra.MapperBuilder;
+package pereira.mateus.frmkmbdemo.infra.MapperBuilder.maps;
 
- 
+
 import java.util.List;
 
 public record LibraryMap(List<Map> maps) {
