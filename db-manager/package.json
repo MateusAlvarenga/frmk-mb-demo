@@ -1,0 +1,25 @@
+{
+  "name": "dbscheama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "prisma init",
+    "g": "prisma generate",
+    "m": "prisma migrate dev --name $(date +%F_%H-%M-%S)",
+    "md": "prisma migrate deploy --name $(date +%F_%H-%M-%S)",
+    "s": "prisma studio",
+    "i": "prisma introspect",
+    "d": "prisma-docs-generator serve",
+    "f": "prisma format"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^3.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0"
+  }
+}
