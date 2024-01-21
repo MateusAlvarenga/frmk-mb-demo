@@ -12,6 +12,4 @@ public class FrmkMbDemoApplication {
 		SpringApplication.run(FrmkMbDemoApplication.class, args);
 	}
 
-
-
 }
