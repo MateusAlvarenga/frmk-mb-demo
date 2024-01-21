@@ -4,6 +4,7 @@
       "fetchMap": [
         {
           "id": "listAllBooks",
+          "from": "books",
           "columns": [
             {
               "name": "id",
