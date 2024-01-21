@@ -9,10 +9,4 @@
         SELECT * FROM Book
     </select>
 
-    <select id="genericQuery" resultType="pereira.mateus.frmkmbdemo.domain.model.Book"
-           parameterType="pereira.mateus.frmkmbdemo.domain.model.Query">
-
-        ${query}
-
-    </select>
 </mapper>

@@ -5,6 +5,4 @@ import java.util.List;
 public interface LibraryDAO {
 
       List<Book> listAllBooks();
-
-       List<Book> genericQuery(Query query);
 }

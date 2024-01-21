@@ -22,18 +22,12 @@ public class LibraryService implements ILibraryService{
 
     @Override
     public List<Book> listAllBooks() {
-//        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
-//            LibraryDAO libraryDAO = sqlSession.getMapper(LibraryDAO.class);
-//            return libraryDAO.listAllBooks();
-//        }catch (Exception e){
-//            throw new RuntimeException(e);
-//        }
-
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-        LibraryDAO libraryDAO = sqlSession.getMapper(LibraryDAO.class);
-        Query query = new Query();
-        query.setQuery("select * from Book");
-        return libraryDAO.genericQuery(query);
+        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
+            LibraryDAO libraryDAO = sqlSession.getMapper(LibraryDAO.class);
+            return libraryDAO.listAllBooks();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
